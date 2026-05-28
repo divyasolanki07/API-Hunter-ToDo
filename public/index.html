@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>API Hunter Todo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <h1>API Hunter Todo</h1>
+    <p class="subtitle">Simple Todo app with a fake JSON Server backend.</p>
+
+    <form id="todo-form">
+      <input id="new-todo" placeholder="Add a new task" required autocomplete="off" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="status"></div>
+    <ul id="todo-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

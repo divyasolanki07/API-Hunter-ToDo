@@ -1,0 +1,15 @@
+{
+  "name": "todo-jsonserver",
+  "version": "1.0.0",
+  "description": "Simple ToDo app with json-server fake backend",
+  "scripts": {
+    "start:server": "json-server --watch db.json --port 3000",
+    "start:client": "http-server ./public -p 8080",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "http-server": "^14.1.1",
+    "concurrently": "^8.2.0"
+  }
+}
